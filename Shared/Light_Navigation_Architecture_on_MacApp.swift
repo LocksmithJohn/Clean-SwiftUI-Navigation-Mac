@@ -7,11 +7,14 @@
 
 import SwiftUI
 
+let container = Container()
+
 @main
 struct Light_Navigation_Architecture_on_MacApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(container: container)
+                .ignoresSafeArea()
         }
     }
 }

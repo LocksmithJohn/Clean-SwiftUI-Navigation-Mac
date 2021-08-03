@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let container: Container
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+#if os(macOS)
+        NavigationView {
+        SideBar().environmentObject(container)
+        List {
+            Text("jeden").padding()
+            Text("dwa").padding()
+            Text("trzy").padding()
+            Text("cztery").padding()
+        }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+#else
+        TabBar().environmentObject(container)
+#endif
     }
 }
