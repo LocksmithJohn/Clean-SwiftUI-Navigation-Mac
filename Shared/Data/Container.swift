@@ -19,6 +19,8 @@ class Container: ObservableObject {
     let routerInbox = Router()
     let routerTasks = Router()
     let routerProjects = Router()
+#elseif os(macOS)
+    let macRouter = MacRouter()
 #endif
     
     //    static var defaultValue: Self {
@@ -28,6 +30,16 @@ class Container: ObservableObject {
     init() {
         self.taskInteractor = TasksInteractor(appstate: appState)
         self.projectsInteractor = ProjectsInteractor(appstate: appState)
+    }
+    
+}
+
+class MacRouter: ObservableObject {
+    
+    @Published var type: SType = .tasks {
+        didSet {
+            print("filter type: \(type)")
+        }
     }
     
 }
