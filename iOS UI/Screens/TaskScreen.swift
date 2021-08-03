@@ -30,7 +30,6 @@ struct TasksScreen: MyView {
                 ForEach(tasksNames, id: \.self) { task in
                     Text(task)
                 }
-
             }
             TextField("new task", text: $newTask)
                 .textFieldStyle(CustomTextfieldStyle())

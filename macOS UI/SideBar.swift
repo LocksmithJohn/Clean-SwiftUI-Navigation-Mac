@@ -9,30 +9,29 @@ import SwiftUI
 
 struct SideBar: View {
     
-    @EnvironmentObject var container: Container
-
+    @EnvironmentObject var macRouter: MacRouter
+    
     var body: some View {
-            List {
-                button(imageName: "1.circle", type: .inbox)
-                button(imageName: "2.circle", type: .tasks)
-                button(imageName: "3.circle", type: .projects)
-            }
-            .listStyle(SidebarListStyle())
-            .frame(minWidth: 150, idealWidth: 150, maxWidth: 200, maxHeight: .infinity)
-            .padding(.top, 16)
+        List {
+            button(imageName: "1.circle", type: .inbox)
+            button(imageName: "2.circle", type: .tasks)
+            button(imageName: "3.circle", type: .projects)
+        }
+        .listStyle(SidebarListStyle())
+        .frame(minWidth: 150, idealWidth: 150, maxWidth: 200, maxHeight: .infinity)
+        .padding(.top, 16)
     }
     
     private func button(imageName: String, type: SType) -> some View {
         Button {
-            container.macRouter.type = type
+            macRouter.type = type
         } label: {
-//            VStack {
+            HStack {
                 Image(systemName: imageName)
-//            }
-
+                Text(type.title ?? "").padding()
+            }
         }
-        .frame(width: 40, height: 30)
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(10)
+
+        .buttonStyle(LinkButtonStyle())
     }
 }

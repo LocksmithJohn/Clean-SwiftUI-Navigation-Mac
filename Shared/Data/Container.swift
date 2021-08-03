@@ -20,7 +20,7 @@ class Container: ObservableObject {
     let routerTasks = Router()
     let routerProjects = Router()
 #elseif os(macOS)
-    let macRouter = MacRouter()
+    @Published var macRouter = MacRouter()
 #endif
     
     //    static var defaultValue: Self {

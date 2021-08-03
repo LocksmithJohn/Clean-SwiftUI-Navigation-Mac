@@ -13,8 +13,9 @@ struct MacView: View {
     
     var body: some View {
         NavigationView {
-            SideBar().environmentObject(container)
-            MiddleBar().environmentObject(container)
+            SideBar().environmentObject(container.macRouter)
+            MiddleBar().environmentObject(container.macRouter)
+            CanvasView()
         }
     }
 }

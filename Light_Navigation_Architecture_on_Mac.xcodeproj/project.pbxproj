@@ -54,6 +54,7 @@
 		CEE4E9F426B9F26800CFD409 /* SType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F226B9F26800CFD409 /* SType.swift */; };
 		CEE4E9F726B9F34900CFD409 /* MacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F526B9F34900CFD409 /* MacView.swift */; };
 		CEE4E9FA26B9F5C800CFD409 /* MiddleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */; };
+		CEE4E9FC26BA036300CFD409 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9FB26BA036300CFD409 /* CanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		CEE4E9F226B9F26800CFD409 /* SType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SType.swift; sourceTree = "<group>"; };
 		CEE4E9F526B9F34900CFD409 /* MacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacView.swift; sourceTree = "<group>"; };
 		CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBar.swift; sourceTree = "<group>"; };
+		CEE4E9FB26BA036300CFD409 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				CEE4E9F526B9F34900CFD409 /* MacView.swift */,
 				CEE4E9E226B9E51B00CFD409 /* SideBar.swift */,
 				CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */,
+				CEE4E9FB26BA036300CFD409 /* CanvasView.swift */,
 			);
 			path = "macOS UI";
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			files = (
 				CEB80F7D26B91344000D317B /* ContentView.swift in Sources */,
 				CEB80F8A26B9140C000D317B /* Container.swift in Sources */,
+				CEE4E9FC26BA036300CFD409 /* CanvasView.swift in Sources */,
 				CEB80FC926B916AF000D317B /* TaskInteractor.swift in Sources */,
 				CEB80F7B26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */,
 				CEB80FC626B9169E000D317B /* CustomtextfieldStyle.swift in Sources */,
