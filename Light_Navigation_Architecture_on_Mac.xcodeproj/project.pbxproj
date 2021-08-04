@@ -48,13 +48,16 @@
 		CEB80FD126B916E9000D317B /* Environment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD026B916E9000D317B /* Environment+Extensions.swift */; };
 		CEB80FD226B916E9000D317B /* Environment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD026B916E9000D317B /* Environment+Extensions.swift */; };
 		CEB80FD426B91746000D317B /* InboxScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD326B91746000D317B /* InboxScreen.swift */; };
-		CEE4E9E426B9E51B00CFD409 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9E226B9E51B00CFD409 /* SideBar.swift */; };
+		CEE4E9E426B9E51B00CFD409 /* SideBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9E226B9E51B00CFD409 /* SideBarScreen.swift */; };
 		CEE4E9E726B9E57400CFD409 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9E626B9E57400CFD409 /* TabBar.swift */; };
 		CEE4E9F326B9F26800CFD409 /* SType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F226B9F26800CFD409 /* SType.swift */; };
 		CEE4E9F426B9F26800CFD409 /* SType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F226B9F26800CFD409 /* SType.swift */; };
 		CEE4E9F726B9F34900CFD409 /* MacView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F526B9F34900CFD409 /* MacView.swift */; };
-		CEE4E9FA26B9F5C800CFD409 /* MiddleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */; };
-		CEE4E9FC26BA036300CFD409 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9FB26BA036300CFD409 /* CanvasView.swift */; };
+		CEE4E9FA26B9F5C800CFD409 /* MiddleBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9F826B9F5C800CFD409 /* MiddleBarScreen.swift */; };
+		CEE4E9FC26BA036300CFD409 /* CanvasScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9FB26BA036300CFD409 /* CanvasScreen.swift */; };
+		CEE4E9FE26BA772500CFD409 /* MacButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9FD26BA772500CFD409 /* MacButton.swift */; };
+		CEE4EA0226BA808400CFD409 /* InputInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4EA0126BA808400CFD409 /* InputInteractor.swift */; };
+		CEE4EA0326BA808400CFD409 /* InputInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4EA0126BA808400CFD409 /* InputInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,12 +92,14 @@
 		CEB80FCD26B916D4000D317B /* CurrentValueSubject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentValueSubject+Extensions.swift"; sourceTree = "<group>"; };
 		CEB80FD026B916E9000D317B /* Environment+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Extensions.swift"; sourceTree = "<group>"; };
 		CEB80FD326B91746000D317B /* InboxScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxScreen.swift; sourceTree = "<group>"; };
-		CEE4E9E226B9E51B00CFD409 /* SideBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
+		CEE4E9E226B9E51B00CFD409 /* SideBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarScreen.swift; sourceTree = "<group>"; };
 		CEE4E9E626B9E57400CFD409 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		CEE4E9F226B9F26800CFD409 /* SType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SType.swift; sourceTree = "<group>"; };
 		CEE4E9F526B9F34900CFD409 /* MacView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacView.swift; sourceTree = "<group>"; };
-		CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBar.swift; sourceTree = "<group>"; };
-		CEE4E9FB26BA036300CFD409 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		CEE4E9F826B9F5C800CFD409 /* MiddleBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleBarScreen.swift; sourceTree = "<group>"; };
+		CEE4E9FB26BA036300CFD409 /* CanvasScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasScreen.swift; sourceTree = "<group>"; };
+		CEE4E9FD26BA772500CFD409 /* MacButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacButton.swift; sourceTree = "<group>"; };
+		CEE4EA0126BA808400CFD409 /* InputInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputInteractor.swift; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/InputInteractor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +213,8 @@
 		CEE4E9ED26B9E60E00CFD409 /* macOS UI */ = {
 			isa = PBXGroup;
 			children = (
-				CEE4E9F526B9F34900CFD409 /* MacView.swift */,
-				CEE4E9E226B9E51B00CFD409 /* SideBar.swift */,
-				CEE4E9F826B9F5C800CFD409 /* MiddleBar.swift */,
-				CEE4E9FB26BA036300CFD409 /* CanvasView.swift */,
+				CEE4E9FF26BA776E00CFD409 /* Screens */,
+				CEE4EA0026BA777300CFD409 /* Views */,
 			);
 			path = "macOS UI";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			children = (
 				CEB80FC726B916AF000D317B /* TaskInteractor.swift */,
 				CEB80FCA26B916C2000D317B /* ProjectsInteractor.swift */,
+				CEE4EA0126BA808400CFD409 /* InputInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -252,6 +256,25 @@
 				CEB80FAF26B91502000D317B /* InboxNavigationController.swift */,
 			);
 			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		CEE4E9FF26BA776E00CFD409 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4E9F526B9F34900CFD409 /* MacView.swift */,
+				CEE4E9E226B9E51B00CFD409 /* SideBarScreen.swift */,
+				CEE4E9F826B9F5C800CFD409 /* MiddleBarScreen.swift */,
+				CEE4E9FB26BA036300CFD409 /* CanvasScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CEE4EA0026BA777300CFD409 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEE4E9FD26BA772500CFD409 /* MacButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +393,7 @@
 				CEB80FBF26B9167A000D317B /* InputDetailsScreen.swift in Sources */,
 				CEB80FB626B91524000D317B /* TaskDetailsScreen.swift in Sources */,
 				CEB80F8C26B9141F000D317B /* AppState.swift in Sources */,
+				CEE4EA0226BA808400CFD409 /* InputInteractor.swift in Sources */,
 				CEB80FCE26B916D4000D317B /* CurrentValueSubject+Extensions.swift in Sources */,
 				CEB80FB326B9150F000D317B /* TaskScreen.swift in Sources */,
 				CEB80FAD26B914F1000D317B /* ProjectNavigationController.swift in Sources */,
@@ -391,20 +415,22 @@
 			files = (
 				CEB80F7D26B91344000D317B /* ContentView.swift in Sources */,
 				CEB80F8A26B9140C000D317B /* Container.swift in Sources */,
-				CEE4E9FC26BA036300CFD409 /* CanvasView.swift in Sources */,
+				CEE4E9FC26BA036300CFD409 /* CanvasScreen.swift in Sources */,
 				CEB80FC926B916AF000D317B /* TaskInteractor.swift in Sources */,
 				CEB80F7B26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */,
 				CEB80FC626B9169E000D317B /* CustomtextfieldStyle.swift in Sources */,
 				CEB80FD226B916E9000D317B /* Environment+Extensions.swift in Sources */,
 				CEE4E9F726B9F34900CFD409 /* MacView.swift in Sources */,
 				CEB80FCC26B916C2000D317B /* ProjectsInteractor.swift in Sources */,
-				CEE4E9E426B9E51B00CFD409 /* SideBar.swift in Sources */,
+				CEE4E9E426B9E51B00CFD409 /* SideBarScreen.swift in Sources */,
 				CEB80F8D26B9141F000D317B /* AppState.swift in Sources */,
 				CEB80FCF26B916D4000D317B /* CurrentValueSubject+Extensions.swift in Sources */,
-				CEE4E9FA26B9F5C800CFD409 /* MiddleBar.swift in Sources */,
+				CEE4E9FA26B9F5C800CFD409 /* MiddleBarScreen.swift in Sources */,
 				CEB80F9026B9142D000D317B /* Models.swift in Sources */,
 				CEE4E9F426B9F26800CFD409 /* SType.swift in Sources */,
+				CEE4E9FE26BA772500CFD409 /* MacButton.swift in Sources */,
 				CEB80FC326B91689000D317B /* CustomButtonStyle.swift in Sources */,
+				CEE4EA0326BA808400CFD409 /* InputInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

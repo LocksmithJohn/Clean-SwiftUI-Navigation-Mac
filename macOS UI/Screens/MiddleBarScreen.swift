@@ -7,7 +7,7 @@
 import Combine
 import SwiftUI
 
-struct MiddleBar: View {
+struct MiddleBarScreen: View {
     
     @EnvironmentObject var container: Container
     @EnvironmentObject var macRouter: MacRouter
@@ -31,20 +31,30 @@ struct MiddleBar: View {
                     }
                 }
             }
-            HStack {
-                Button {
-                    let task = Task(name: "newTask", subtitle: "subtitle", parentProject: "nil")
-                    container.taskInteractor.add(task: task)
-                } label: { Text("Add task").padding() }
-                Button {
-                    let pr = Project(name: "prjct", description: "jgf", tasks: [])
-                    container.projectsInteractor.add(project: pr)
-                } label: { Text("Add project").padding() }
-            }.buttonStyle(PlainButtonStyle())
-
+            bottomBar
         }
         .onReceive(tasksPublisher, perform: { tasksNames = $0.map { $0.name ?? "-" } } )
         .onReceive(projectsPublisher, perform: { projectsNames = $0.map { $0.name ?? "-" } } )
+    }
+    
+    private var bottomBar: some View {
+            return HStack {
+                switch container.macRouter.type {
+                case .tasks:
+                    MacButton(action: {
+                        container.taskInteractor.add(task: Task(name: "1", subtitle: "2", parentProject: "3"))
+                    }, label: "Add Task")
+                case .projects:
+                    MacButton(action: {
+                        container.projectsInteractor.add(project: Project(name: "p1", description: "p2", tasks: []))
+                    }, label: "Add Project")
+                default:
+                    MacButton(action: {
+                        print("filter adsgf")
+                    }, label: "Add Input")
+
+            }
+        }
     }
     
     private var tasksPublisher: AnyPublisher<[Task], Never> {

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SideBar: View {
+struct SideBarScreen: View {
     
     @EnvironmentObject var macRouter: MacRouter
     

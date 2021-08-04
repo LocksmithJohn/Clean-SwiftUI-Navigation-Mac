@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CanvasView: View {
+struct CanvasScreen: View {
     var body: some View {
         VStack {
             Text("Hello world!")
