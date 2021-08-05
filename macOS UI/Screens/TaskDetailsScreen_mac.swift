@@ -6,21 +6,58 @@
 //
 
 import SwiftUI
+import Cocoa
 
 struct TaskDetailsScreen_mac: View {
     
     @EnvironmentObject var container: Container
     @State var taskName: String = ""
     @State var taskDescription: String = ""
+    @State var placeholder: String = "Description..."
+    
+    var type: MiddleType.CanvasTasksType = .initial
 
     var body: some View {
-        TextField("Provide task name", text: $taskName)
-            .frame(width: 200, height: 40)
-        TextField("Provide task description", text: $taskDescription)
-            .frame(width: 200, height: 40)
+        VStack {
+        if type == .initial {
+            Text("Initial")
+        } else {
+            Text("Details")
+        }
+            TextField("Provide task name", text: $taskName)
+                .textFieldStyle(.plain)
+                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .padding(.leading, 16)
+            ZStack(alignment: .topLeading) {
+                Text(placeholder)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundColor(.white.opacity(0.3))
+                TextEditor(text: $taskDescription)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
+            }
+            .padding()
+            .onChange(of: taskDescription) { value in
+                if taskDescription.isEmpty {
+                    placeholder = "Tutaj opis..."
+                } else {
+                    placeholder = ""
+                }
+            }
         MacButton(action: {
             container.taskInteractor.add(task: Task(name: taskName, description: taskDescription, parentProject: ""))
         }, label: "Create")
+                
+        }
     }
     
+}
+
+extension NSTextView {
+  open override var frame: CGRect {
+    didSet {
+      backgroundColor = .clear
+      drawsBackground = true
+    }
+  }
 }

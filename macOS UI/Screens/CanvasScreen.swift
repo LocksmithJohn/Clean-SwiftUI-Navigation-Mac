@@ -15,10 +15,10 @@ struct CanvasScreen: View {
     var body: some View {
         VStack {
             switch router.type {
-            case .tasks:
-                TaskDetailsScreen_mac()
+            case .tasks(let type):
+                TaskDetailsScreen_mac(type: type)
             case .projects:
-                Text("Projects")
+                InputDetailsScreen_mac()
             default:
                 Text("Inboxes")
             }

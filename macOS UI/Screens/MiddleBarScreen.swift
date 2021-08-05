@@ -38,6 +38,7 @@ struct MiddleBarScreen: View {
         switch router.type {
         case .tasks:
             TasksList(tasksNames: $tasksNames)
+                .environmentObject(container)
         case .projects:
             ProjectsList(projectsNames: $projectsNames)
         default:
@@ -50,7 +51,7 @@ struct MiddleBarScreen: View {
                 switch router.type {
                 case .tasks:
                     MacButton(action: {
-                        router.type = .tasks(.details) // tutaj scentralizować to
+                        router.type = .tasks(.initial) // tutaj scentralizować to
                     }, label: "Add Task")
 
                 case .projects:

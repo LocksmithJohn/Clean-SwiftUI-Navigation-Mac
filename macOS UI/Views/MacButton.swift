@@ -19,7 +19,8 @@ struct MacButton: View {
             Text(label)
                 .padding(10)
         }
-        .background(Color.white.opacity(0.05))
+        .background(Color.blue)
+//        .background(Color.white.opacity(0.05))
         .cornerRadius(6)
         .buttonStyle(PlainButtonStyle())
 

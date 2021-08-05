@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE490FE326BC756800FFFB12 /* InputDetailsScreen_mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE490FE226BC756800FFFB12 /* InputDetailsScreen_mac.swift */; };
 		CEB80F7A26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */; };
 		CEB80F7B26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */; };
 		CEB80F7C26B91344000D317B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6D26B91344000D317B /* ContentView.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE490FE226BC756800FFFB12 /* InputDetailsScreen_mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDetailsScreen_mac.swift; sourceTree = "<group>"; };
 		CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light_Navigation_Architecture_on_MacApp.swift; sourceTree = "<group>"; };
 		CEB80F6D26B91344000D317B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB80F6E26B91344000D317B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				CEE4E9F826B9F5C800CFD409 /* MiddleBarScreen.swift */,
 				CEE4E9FB26BA036300CFD409 /* CanvasScreen.swift */,
 				CEE4EA0A26BC05C800CFD409 /* TaskDetailsScreen_mac.swift */,
+				CE490FE226BC756800FFFB12 /* InputDetailsScreen_mac.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				CEE4EA0526BA82B500CFD409 /* TasksList.swift in Sources */,
 				CEE4E9FE26BA772500CFD409 /* MacButton.swift in Sources */,
 				CEB80FC326B91689000D317B /* CustomButtonStyle.swift in Sources */,
+				CE490FE326BC756800FFFB12 /* InputDetailsScreen_mac.swift in Sources */,
 				CEE4EA0326BA808400CFD409 /* InputInteractor.swift in Sources */,
 				CEE4EA0B26BC05C800CFD409 /* TaskDetailsScreen_mac.swift in Sources */,
 			);

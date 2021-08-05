@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+import UIKit
 
 protocol MyView: View {
     var type: SType { get set }
