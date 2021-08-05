@@ -10,47 +10,56 @@ import SwiftUI
 struct MiddleBarScreen: View {
     
     @EnvironmentObject var container: Container
-    @EnvironmentObject var macRouter: MacRouter
+    @EnvironmentObject var router: Router
     
     @State private var tasksNames: [String] = []
     @State private var projectsNames: [String] = []
+    @State private var inputsNames: [String] = []
+    
+    @State private var showingAlert = false
 
     var body: some View {
         VStack {
-            Text(String(macRouter.type.title ?? "-"))
-            if macRouter.type == .tasks {
-                List {
-                    ForEach(tasksNames, id: \.self) { task in
-                        Text(task)
-                    }
-                }
-            } else {
-                List {
-                    ForEach(projectsNames, id: \.self) { task in
-                        Text(task)
-                    }
-                }
-            }
-            bottomBar
+            topView
+            listView
+            bottomView
+                .padding()
         }
-        .onReceive(tasksPublisher, perform: { tasksNames = $0.map { $0.name ?? "-" } } )
-        .onReceive(projectsPublisher, perform: { projectsNames = $0.map { $0.name ?? "-" } } )
+        .onReceive(tasksPublisher, perform: { tasksNames = $0.map { $0.name } } )
+        .onReceive(projectsPublisher, perform: { projectsNames = $0.map { $0.name } } )
+        .onReceive(inputsPublisher, perform: { inputsNames = $0.map { $0.name } } )
     }
     
-    private var bottomBar: some View {
+    private var topView: some View {
+        Text(String(router.type.title ?? "-"))
+    }
+    
+    @ViewBuilder private var listView: some View {
+        switch router.type {
+        case .tasks:
+            TasksList(tasksNames: $tasksNames)
+        case .projects:
+            ProjectsList(projectsNames: $projectsNames)
+        default:
+            InputsList(inputsNames: $inputsNames)
+        }
+    }
+    
+    private var bottomView: some View {
             return HStack {
-                switch container.macRouter.type {
+                switch router.type {
                 case .tasks:
                     MacButton(action: {
-                        container.taskInteractor.add(task: Task(name: "1", subtitle: "2", parentProject: "3"))
+                        router.type = .tasks(.details) // tutaj scentralizować to
                     }, label: "Add Task")
+
                 case .projects:
                     MacButton(action: {
-                        container.projectsInteractor.add(project: Project(name: "p1", description: "p2", tasks: []))
+                        router.type = .projects(.details)
                     }, label: "Add Project")
                 default:
                     MacButton(action: {
-                        print("filter adsgf")
+                        container.inputsInteractor.add(input: Input(name: "inoput", description: "asdf"))
                     }, label: "Add Input")
 
             }
@@ -64,6 +73,11 @@ struct MiddleBarScreen: View {
     
     private var projectsPublisher: AnyPublisher<[Project], Never> {
         container.appState.projectsSubject
+            .eraseToAnyPublisher()
+    }
+    
+    private var inputsPublisher: AnyPublisher<[Input], Never> {
+        container.appState.inputsSubject
             .eraseToAnyPublisher()
     }
     

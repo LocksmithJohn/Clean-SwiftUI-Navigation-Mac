@@ -17,7 +17,7 @@ struct TasksScreen: MyView {
     var type = SType.tasks
     
     @EnvironmentObject var router: Router
-    @Environment(\.injected) private var injected: Container
+    @Environment(\.container) private var container: Container
     
     @State private var tasksNames: [String] = []
     @State private var newTask: String = ""
@@ -34,8 +34,8 @@ struct TasksScreen: MyView {
             TextField("new task", text: $newTask)
                 .textFieldStyle(CustomTextfieldStyle())
             Button {
-                let task = Task(name: newTask, subtitle: "subtitle", parentProject: "nil")
-                injected.taskInteractor.add(task: task)
+                let task = Task(name: newTask, description: "subtitle", parentProject: "nil")
+                container.taskInteractor.add(task: task)
             } label: {
                 Text("Add Task")
             }.buttonStyle(CustomButtonStyle(color: .green))
@@ -50,7 +50,7 @@ struct TasksScreen: MyView {
     }
     
     private var tasksPublisher: AnyPublisher<[Task], Never> {
-        injected.appState.tasksSubject
+        container.appState.tasksSubject
             .eraseToAnyPublisher()
     }
     

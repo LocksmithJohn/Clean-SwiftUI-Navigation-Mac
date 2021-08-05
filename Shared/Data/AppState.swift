@@ -14,10 +14,12 @@ class AppState {
     
     var tasksSubject: CurrentValueSubject<[Task], Never> = CurrentValueSubject([])
     var projectsSubject: CurrentValueSubject<[Project], Never> = CurrentValueSubject([])
+    var inputsSubject: CurrentValueSubject<[Input], Never> = CurrentValueSubject([])
 
     private var projects = [Project]()  { didSet { projectsSubject.send(projects) }}
     private var tasks: [Task] = [] { didSet { tasksSubject.send(tasks) }}
-    
+    private var inputs: [Input] = [] { didSet { inputsSubject.send(inputs) }}
+
     private var bags = Set<AnyCancellable>()
     
     func addTask(_ task: Task) {
@@ -26,6 +28,10 @@ class AppState {
     
     func addProject(_ project: Project) {
         projects.append(project)
+    }
+    
+    func addInput(_ input: Input) {
+        inputs.append(input)
     }
     
 }

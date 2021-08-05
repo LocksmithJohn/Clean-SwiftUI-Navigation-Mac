@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SType {
+enum SType { // for iPhone
     case tasks
     case taskDetails
     case projects

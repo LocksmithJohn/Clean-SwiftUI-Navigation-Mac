@@ -14,32 +14,20 @@ class Container: ObservableObject {
     
     let taskInteractor: TasksInteractor
     let projectsInteractor: ProjectsInteractor
-    
+    let inputsInteractor: InputInteractor
+
 #if os(iOS)
     let routerInbox = Router()
     let routerTasks = Router()
     let routerProjects = Router()
 #elseif os(macOS)
-    @Published var macRouter = MacRouter()
+    @Published var router = Router() // tutaj logikę tego routera trzeba jakos zmienic
 #endif
-    
-    //    static var defaultValue: Self {
-    //        Self()
-    //    }
     
     init() {
         self.taskInteractor = TasksInteractor(appstate: appState)
         self.projectsInteractor = ProjectsInteractor(appstate: appState)
-    }
-    
-}
-
-class MacRouter: ObservableObject {
-    
-    @Published var type: SType = .tasks {
-        didSet {
-            print("filter type: \(type)")
-        }
+        self.inputsInteractor = InputInteractor(appstate: appState)
     }
     
 }

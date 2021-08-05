@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct CanvasScreen: View {
+    
+    @EnvironmentObject var container: Container
+    @EnvironmentObject var router: Router
+
     var body: some View {
         VStack {
-            Text("Hello world!")
+            switch router.type {
+            case .tasks:
+                TaskDetailsScreen_mac()
+            case .projects:
+                Text("Projects")
+            default:
+                Text("Inboxes")
+            }
         }
     }
+    
 }
-
