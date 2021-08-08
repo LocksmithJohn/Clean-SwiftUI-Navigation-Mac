@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE490FE326BC756800FFFB12 /* InputDetailsScreen_mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE490FE226BC756800FFFB12 /* InputDetailsScreen_mac.swift */; };
+		CE6B444C26BF2E8400ABAF0A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B444B26BF2E8400ABAF0A /* Persistance.swift */; };
+		CE6B444D26BF2E8400ABAF0A /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B444B26BF2E8400ABAF0A /* Persistance.swift */; };
+		CE6B445026BFFF8300ABAF0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE6B444E26BFFF8300ABAF0A /* Model.xcdatamodeld */; };
+		CE6B445126BFFF8300ABAF0A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE6B444E26BFFF8300ABAF0A /* Model.xcdatamodeld */; };
 		CEB80F7A26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */; };
 		CEB80F7B26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */; };
 		CEB80F7C26B91344000D317B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80F6D26B91344000D317B /* ContentView.swift */; };
@@ -46,8 +50,6 @@
 		CEB80FCC26B916C2000D317B /* ProjectsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FCA26B916C2000D317B /* ProjectsInteractor.swift */; };
 		CEB80FCE26B916D4000D317B /* CurrentValueSubject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FCD26B916D4000D317B /* CurrentValueSubject+Extensions.swift */; };
 		CEB80FCF26B916D4000D317B /* CurrentValueSubject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FCD26B916D4000D317B /* CurrentValueSubject+Extensions.swift */; };
-		CEB80FD126B916E9000D317B /* Environment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD026B916E9000D317B /* Environment+Extensions.swift */; };
-		CEB80FD226B916E9000D317B /* Environment+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD026B916E9000D317B /* Environment+Extensions.swift */; };
 		CEB80FD426B91746000D317B /* InboxScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB80FD326B91746000D317B /* InboxScreen.swift */; };
 		CEE4E9E426B9E51B00CFD409 /* SideBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9E226B9E51B00CFD409 /* SideBarScreen.swift */; };
 		CEE4E9E726B9E57400CFD409 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4E9E626B9E57400CFD409 /* TabBar.swift */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		CE490FE226BC756800FFFB12 /* InputDetailsScreen_mac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDetailsScreen_mac.swift; sourceTree = "<group>"; };
+		CE6B444B26BF2E8400ABAF0A /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		CE6B444F26BFFF8300ABAF0A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light_Navigation_Architecture_on_MacApp.swift; sourceTree = "<group>"; };
 		CEB80F6D26B91344000D317B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEB80F6E26B91344000D317B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +101,6 @@
 		CEB80FC726B916AF000D317B /* TaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInteractor.swift; sourceTree = "<group>"; };
 		CEB80FCA26B916C2000D317B /* ProjectsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsInteractor.swift; sourceTree = "<group>"; };
 		CEB80FCD26B916D4000D317B /* CurrentValueSubject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentValueSubject+Extensions.swift"; sourceTree = "<group>"; };
-		CEB80FD026B916E9000D317B /* Environment+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment+Extensions.swift"; sourceTree = "<group>"; };
 		CEB80FD326B91746000D317B /* InboxScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxScreen.swift; sourceTree = "<group>"; };
 		CEE4E9E226B9E51B00CFD409 /* SideBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarScreen.swift; sourceTree = "<group>"; };
 		CEE4E9E626B9E57400CFD409 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 			children = (
 				CEB80F6C26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift */,
 				CEB80F6D26B91344000D317B /* ContentView.swift */,
+				CE6B444B26BF2E8400ABAF0A /* Persistance.swift */,
+				CE6B444E26BFFF8300ABAF0A /* Model.xcdatamodeld */,
 				CEE4E9E526B9E55300CFD409 /* Data */,
 				CEE4E9F026B9E65300CFD409 /* Styles */,
 				CEE4E9EF26B9E64600CFD409 /* Interactors */,
@@ -218,7 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				CEB80FCD26B916D4000D317B /* CurrentValueSubject+Extensions.swift */,
-				CEB80FD026B916E9000D317B /* Environment+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,9 +417,9 @@
 				CEB80FC526B9169E000D317B /* CustomtextfieldStyle.swift in Sources */,
 				CEB80FA126B91497000D317B /* Strategy.swift in Sources */,
 				CEB80FB926B9153A000D317B /* ProjectsScreen.swift in Sources */,
-				CEB80FD126B916E9000D317B /* Environment+Extensions.swift in Sources */,
 				CEB80F9E26B9148A000D317B /* NavigationBar.swift in Sources */,
 				CEB80FCB26B916C2000D317B /* ProjectsInteractor.swift in Sources */,
+				CE6B444C26BF2E8400ABAF0A /* Persistance.swift in Sources */,
 				CEE4E9E726B9E57400CFD409 /* TabBar.swift in Sources */,
 				CEB80FA726B914BB000D317B /* NavigationController.swift in Sources */,
 				CEB80FBF26B9167A000D317B /* InputDetailsScreen.swift in Sources */,
@@ -430,6 +434,7 @@
 				CEB80F9826B9146F000D317B /* StackScreenViewController.swift in Sources */,
 				CEB80FAA26B914E2000D317B /* TaskNavigationController.swift in Sources */,
 				CEB80FD426B91746000D317B /* InboxScreen.swift in Sources */,
+				CE6B445026BFFF8300ABAF0A /* Model.xcdatamodeld in Sources */,
 				CEB80FB026B91502000D317B /* InboxNavigationController.swift in Sources */,
 				CEB80FBC26B91664000D317B /* ProjectDetailsScreen.swift in Sources */,
 				CEB80F9B26B9147D000D317B /* ScreenFactory.swift in Sources */,
@@ -449,11 +454,11 @@
 				CEB80FC926B916AF000D317B /* TaskInteractor.swift in Sources */,
 				CEB80F7B26B91344000D317B /* Light_Navigation_Architecture_on_MacApp.swift in Sources */,
 				CEB80FC626B9169E000D317B /* CustomtextfieldStyle.swift in Sources */,
-				CEB80FD226B916E9000D317B /* Environment+Extensions.swift in Sources */,
 				CEE4EA0726BA833300CFD409 /* ProjectsList.swift in Sources */,
 				CEE4EA0E26BC0EF700CFD409 /* SType.swift in Sources */,
 				CEE4E9F726B9F34900CFD409 /* MacView.swift in Sources */,
 				CEB80FCC26B916C2000D317B /* ProjectsInteractor.swift in Sources */,
+				CE6B444D26BF2E8400ABAF0A /* Persistance.swift in Sources */,
 				CEE4E9E426B9E51B00CFD409 /* SideBarScreen.swift in Sources */,
 				CEB80F8D26B9141F000D317B /* AppState.swift in Sources */,
 				CEB80FCF26B916D4000D317B /* CurrentValueSubject+Extensions.swift in Sources */,
@@ -463,6 +468,7 @@
 				CEE4E9FE26BA772500CFD409 /* MacButton.swift in Sources */,
 				CEB80FC326B91689000D317B /* CustomButtonStyle.swift in Sources */,
 				CE490FE326BC756800FFFB12 /* InputDetailsScreen_mac.swift in Sources */,
+				CE6B445126BFFF8300ABAF0A /* Model.xcdatamodeld in Sources */,
 				CEE4EA0326BA808400CFD409 /* InputInteractor.swift in Sources */,
 				CEE4EA0B26BC05C800CFD409 /* TaskDetailsScreen_mac.swift in Sources */,
 			);
@@ -732,6 +738,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE6B444E26BFFF8300ABAF0A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE6B444F26BFFF8300ABAF0A /* Model.xcdatamodel */,
+			);
+			currentVersion = CE6B444F26BFFF8300ABAF0A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEB80F6726B91343000D317B /* Project object */;
 }

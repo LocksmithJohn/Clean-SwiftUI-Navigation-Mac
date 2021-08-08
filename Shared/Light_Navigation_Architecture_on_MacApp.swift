@@ -7,10 +7,12 @@
 
 import SwiftUI
 
-let container = Container()
-
 @main
 struct Light_Navigation_Architecture_on_MacApp: App {
+    
+    let persistenceController = PersistenceController.shared
+    let container = Container()
+    
     var body: some Scene {
         WindowGroup {
             ContentView(container: container)
